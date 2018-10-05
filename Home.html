@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Title </title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <main class="main-home">
+        <div class="show__left">
+            <div class="bs-container">
+                <div class="show__">
+                    <span class="open_"><i class="fas fa-bars"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="left">
+            <div class="menu">
+                <div class="show-menu">
+                    <i class="fas fa-bars show-click"></i>
+                </div>
+                <div class="avatar">
+                    <div class="ImagesFrame">
+                        <div class="ImagesFrameCrop0">
+                            <img src="images/avatar.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="name">
+                        <p>CÔNG SƠN</p>
+                    </div>
+                </div>
+            </div>
+            <div class="nav">
+                <div class="nav-content">
+                    <ul class="nav-list">
+                        <li class="list-item"><a href="" class="list-item__link active"><img src="images/home.png" alt=""><span>TRANG CHỦ</span></a></li>
+                        <li class="list-item"><a href="" class="list-item__link"><img src="images/intro.png" alt=""><span>GIỚI THIỆU</span></a></li>
+                        <li class="list-item"><a href="" class="list-item__link"><img src="images/project.png" alt=""><span>CÁC DỰ ÁN</span></a></li>
+                        <li class="list-item"><a href="" class="list-item__link"><img src="images/newspaper.png" alt=""><span>BÁO CHÍ</span></a></li>
+                        <li class="list-item"><a href="" class="list-item__link"><img src="images/newspaper.png" alt=""><span>CỘNG ĐỒNG</span></a></li>
+                        <li class="list-item"><a href="" class="list-item__link"><img src="images/library.png" alt=""><span>THƯ VIỆN</span></a></li>
+                        <li class="list-item"><a href="" class="list-item__link"><img src="images/email.png" alt=""><span>LIÊN HỆ</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="social">
+                <ul class="list-social">
+                    <li class="social-item"><a href="" class="social-link"><i class="fab fa-facebook"></i></a></li>
+                    <li class="social-item"><a href="" class="social-link"><i class="fab fa-twitter"></i></a></li>
+                    <li class="social-item"><a href="" class="social-link"><i class="fab fa-google"></i></a></li>
+                    <li class="social-item"><a href="" class="social-link"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li class="social-item"><a href="" class="social-link"><i class="fab fa-dribbble"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <div class="img-center">
+                <img src="images/img-1.jpg" alt="">
+            </div> 
+            <div class="info">
+                <h3>HOÀNG CÔNG SƠN</h3>
+                <p>Chuyên gia tư vấn <br> tài chình - bất động sản</p>
+                <a href="">Check Our Work</a>
+            </div>
+        </div>
+    </main>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".ImagesFrameCrop").each(function() {
+                $(this).removeClass("wide")
+                $(this).removeClass("tall")
+                if ($(this).width() / $(this).height() > $(this).parent().width() / $(this).parent().height()) {
+                    $(this).addClass("wide");
+                } else {
+                    $(this).addClass("tall");
+                }
+            });
+            $(".ImagesFrameCrop").children("img").each(function() {
+                $(this).removeClass("wide")
+                $(this).removeClass("tall")
+                if ($(this).width() / $(this).height() > $(this).parent().width() / $(this).parent().height()) {
+                    $(this).addClass("wide");
+                } else {
+                    $(this).addClass("tall");
+                }
+            });
+
+
+            $(".ImagesFrameCrop1").each(function() {
+                $(this).removeClass("wide")
+                $(this).removeClass("tall")
+                if ($(this).width() / $(this).height() > $(this).parent().width() / $(this).parent().height()) {
+                    $(this).addClass("wide");
+                } else {
+                    $(this).addClass("tall");
+                }
+            });
+            $(".ImagesFrameCrop1").children("img").each(function() {
+                $(this).removeClass("wide")
+                $(this).removeClass("tall")
+                if ($(this).width() / $(this).height() > $(this).parent().width() / $(this).parent().height()) {
+                    $(this).addClass("wide");
+                } else {
+                    $(this).addClass("tall");
+                }
+            });
+
+
+            $(".ImagesFrameCrop0").each(function() {
+                $(this).removeClass("wide")
+                $(this).removeClass("tall")
+                if ($(this).width() / $(this).height() > $(this).parent().width() / $(this).parent().height()) {
+                    $(this).addClass("wide");
+                } else {
+                    $(this).addClass("tall");
+                }
+            });
+            $(".ImagesFrameCrop0").children("img").each(function() {
+                $(this).removeClass("wide")
+                $(this).removeClass("tall")
+                if ($(this).width() / $(this).height() > $(this).parent().width() / $(this).parent().height()) {
+                    $(this).addClass("wide");
+                } else {
+                    $(this).addClass("tall");
+                }
+            });
+        })
+
+        $('.show-click').click(function() {
+            $('.left').toggleClass('active');
+            $('.main-home').toggleClass('act');
+        })
+
+        $('.open_').click(function() {
+            $('.left').toggleClass('active_');
+            $('.left').removeClass('active');
+        })
+
+        $(window).on("load", function() {
+            if ($(window).width() < 1200) {
+                $(".left").addClass("active");
+                $(".main-home").addClass("act");
+            } else {
+                $(".left").removeClass("active");
+                $(".main-home").removeClass("act");
+            }
+        })
+        $(window).resize(function() {
+            if ($(window).width() < 1200) {
+                $(".left").addClass("active");
+                $(".main-home").addClass("act");
+            } else {
+                $(".left").removeClass("active");
+                $(".main-home").removeClass("act");
+            }
+        })
+
+    </script>
+</body>
+
+</html>

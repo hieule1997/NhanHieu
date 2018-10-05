@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'FtraBd__';
+  src: url('FtraBd__.eot');
+  src: url('FtraBd__.woff2') format('woff2'),
+       url('FtraBd__.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaBk-Bold';
+  src: url('FuturaBk-Bold.woff') format('woff'),
+       url('FuturaBk-Bold.ttf') format('truetype'),
+       url('FuturaBk-Bold.svg#FuturaBk-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+

@@ -1,0 +1,69 @@
+.project-content {
+    .tab-content {
+        .tab-item {
+            .item__ {
+                .item-library {
+                    margin-bottom: 30px;
+                    .img {
+                        position: relative;
+                        .play-video {
+                            background-image: url(../images/play.png);
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            width: 75px;
+                            height: 75px;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            z-index: 1;
+                            display: none;
+                            background-color: transparent;
+                            box-shadow: none;
+                            border: none;
+                            border-radius: none;
+                            outline: none;
+                        }
+                        &:hover {
+                            .play-video {
+                                display: block;
+                            }
+                        }
+                        .modal {
+                            .modal-dialog {
+                                .modal-header {
+                                    background: #cdcdcd;
+                                    position: relative;
+                                    border-top-left-radius: 6px;
+                                    border-top-right-radius: 6px;
+                                    .modal-title {}
+                                    .close {
+                                        position: absolute;
+                                        top: 50%;
+                                        transform: translateY(-50%);
+                                        right: 15px;
+                                        box-shadow: none;
+                                        border: none;
+                                        opacity: .3;
+                                        &:hover,
+                                        &:focus {
+                                            background: transparent;
+                                            opacity: 1;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:479px) {
+    .project-content .tab-content .tab-item .item__ .item-library {
+        margin-bottom: 20px;
+    }
+}

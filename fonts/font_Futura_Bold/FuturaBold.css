@@ -1,0 +1,18 @@
+@font-face {
+  font-family: '14-3962-futurab';
+  src: url('14-3962-futurab.eot');
+  src: url('14-3962-futurab.woff2') format('woff2'),
+       url('14-3962-futurab.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura-Bold';
+  src: url('Futura-Bold.woff') format('woff'),
+       url('Futura-Bold.ttf') format('truetype'),
+       url('Futura-Bold.svg#Futura-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+

@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'iCielBrandonText-Bold';
+  src: url('iCielBrandonText-Bold.woff') format('woff'),
+       url('iCielBrandonText-Bold.ttf') format('truetype'),
+       url('iCielBrandonText-Bold.svg#iCielBrandonText-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'icielBrandonText-Bold';
+  src: url('icielBrandonText-Bold.eot');
+  src: url('icielBrandonText-Bold.woff2') format('woff2'),
+       url('icielBrandonText-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

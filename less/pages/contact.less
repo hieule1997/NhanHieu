@@ -1,0 +1,95 @@
+.contact {
+    padding-bottom: 200px;
+    .opening {
+        margin-bottom: 51px;
+        p {
+            font-family: mont_light;
+            text-align: center;
+            font-size: 11.5px;
+            margin: 0;
+            font-weight: bold;
+        }
+    }
+    .content-contact {
+        .form {
+            margin-top: 4px;
+            input {
+                height: 40px;
+                border-radius: 0;
+                margin-bottom: 25px;
+                &:focus {
+                    border: 1px solid #372db4 !important;
+                    box-shadow: 0 0 1px 0 #372db4;
+                }
+                &::placeholder {
+                    font-style: normal;
+                    font-size: 13px;
+                    color: #7e7e7e;
+                    font-family: mont_light;
+                }
+            }
+            textarea {
+                margin-bottom: 19px;
+                height: 157px;
+                border-radius: 0;
+                box-shadow: none; 
+                &::placeholder {
+                    font-style: normal;
+                    font-size: 12px;
+                    color: #7e7e7e;
+                    font-family: mont_light;
+                }
+            }
+            .send {
+                border: 2px solid #35373e;
+                background: transparent;
+                padding: 12px 32px;
+                border-radius: 0; 
+                box-shadow: none;
+                color: #35373e; 
+                font-size: 11px;
+                &:hover {
+                    color: #372db4;
+                    border-color: #372db4;
+                }
+            }
+        }
+        .info {
+            margin-left: 73px;
+            .item-info {
+                padding-bottom: 21px;
+                margin-right: 10px;
+                border-bottom: 1px solid #eaeaea;
+                margin-bottom: 25px;
+                .tit {
+                    h4 {
+                        color: #000;
+                        margin-top: 0;
+                        font-size: 13px;
+                        margin-bottom: 18px;
+                    }
+                }
+                .content {
+                    p {
+                        color: #4c4c4c;
+                        margin: 0;
+                        font-size: 12px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:1199px) {
+    .contact {
+        padding-bottom: 60px;
+        .content-contact {
+            .info {
+                margin-left: 0;
+            }
+        }
+    }
+}
